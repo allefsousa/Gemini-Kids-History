@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    alias(libs.plugins.secretsGradle)
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -38,7 +38,10 @@ android {
         viewBinding {
             enable = true
         }
+        buildConfig =  true
+
     }
+
 }
 
 dependencies {

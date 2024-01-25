@@ -8,6 +8,7 @@ espressoCore = "3.5.1"
 appcompat = "1.6.1"
 material = "1.11.0"
 polaris-ds-version = "0.0.19"
+secret-gradle-plugin = "2.0.1"
 
 
 [libraries]
@@ -23,5 +24,5 @@ polarisdesignsystem = { module = "com.github.digitalHorizonsCo.Polaris-Design-Sy
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-secretsGradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version = "2.0.1" }
+secretsGradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secret-gradle-plugin" }
 

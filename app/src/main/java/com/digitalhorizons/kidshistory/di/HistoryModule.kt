@@ -1,10 +1,10 @@
 package com.digitalhorizons.kidshistory.di
 
-import com.digitalhorizons.kidshistory.domain.model.ModelName
 import com.digitalhorizons.kidshistory.history.HistoryViewModel
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.generationConfig
 import org.koin.androidx.viewmodel.dsl.viewModel
+import com.digitalhorizons.kidshistory.BuildConfig
 import org.koin.dsl.module
 
 val config = generationConfig {
@@ -13,7 +13,7 @@ val config = generationConfig {
 
 val generativeModel = GenerativeModel(
     modelName = "gemini-pro",
-    apiKey = "AIzaSyCg0AOyobSRawVbuF7UmFtDjDHcHXYmbSY",
+    apiKey = BuildConfig.apiKey,
     generationConfig = config
 )
 val viewModelModule = module {
